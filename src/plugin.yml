@@ -1,0 +1,7 @@
+name: LunikerTools
+version: 1.0
+description: Various tools used on the Luniker.net Minecraft server.
+author: 2sk
+website: luniker.net/plugin/lunikertools
+main: net.luniker.lunikertools.Main
+prefix: LunikerTools
