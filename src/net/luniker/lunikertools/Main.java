@@ -1,18 +1,14 @@
 package net.luniker.lunikertools;
 
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-/**
- * Created by 2sk on 12-Dec-16.
- */
 public class Main extends JavaPlugin {
+    private Rotate rotate = new Rotate();
+
     @Override
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new Turner(), this);
+        PluginManager pm = getServer().getPluginManager();
+        pm.registerEvents(rotate, this);
     }
-
-//    @Override
-//    public void onDisable() {
-//
-//    }
 }
